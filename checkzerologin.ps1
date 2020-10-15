@@ -11,13 +11,14 @@ $zerologonevents =  Get-Eventlog -Logname System -After 10.08.2020 -ComputerName
 $zerologoneventsString = $zerologonevents | Out-String
 
 #Send the results via smtp mail
+#make sure you set your smtp server
 $EmailTo = "maik.linnemann@provit.info" 
 $EmailFrom = "Event Checker <eventchecker@provit.info>"
 $Subject = "Eventchecker: Result for Zero Login Events"
 $Body = "Eventcheck was done..." + "`n" + "`n"
 $Body += "----------------------------------------------"
 $Body += $zerologoneventsString
-$SMTPServer = "" 
+$SMTPServer = "smtp.mydomain.tld" 
 $SMTPMessage = New-Object System.Net.Mail.MailMessage($EmailFrom, $EmailTo, $Subject, $Body)
 $SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 25) 
 $SMTPClient.EnableSsl = $false 
