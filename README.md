@@ -6,4 +6,4 @@ In August Microsoft patched CVE-2020-1472. With that patch theres a waiting peri
 With the patch on 9th of february unsecure clients will be rejected.
 https://support.microsoft.com/en-us/help/4557222/how-to-manage-the-changes-in-netlogon-secure-channel-connections-assoc#DetectingNon-compliant
 
-With the skript you can search for the events on domain controllers and detect the unsecure devices...
+Script searches for the specific events on domain controllers and detect the unsecure devices.
