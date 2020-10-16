@@ -7,4 +7,4 @@ With the patch on 9th of february unsecure clients will be rejected.
 
 https://support.microsoft.com/en-us/help/4557222/how-to-manage-the-changes-in-netlogon-secure-channel-connections-assoc#DetectingNon-compliant
 
-Script searches for the specific events on domain controllers and detect the unsecure devices.
+Script searches for the specific events on domain controllers to detect the unsecure devices.
