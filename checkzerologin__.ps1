@@ -28,7 +28,7 @@ foreach ($element in $out) {
 $zerologoneventsString = $outarray | Out-String
 
 $EmailTo = "maik.linnemann@provit.info" 
-$EmailFrom = "Event Checker <eventchecker@hlb-schumacher.de>"
+$EmailFrom = "Event Checker <eventchecker@provit.info>"
 $Subject = "Eventchecker: Ergebnis f. Zero Login Events - DC = $dc"
 $Body = "Eventcheck was done... @dc: $dc" + "`n" + "`n"
 $Body += "----------------------------------------------"
