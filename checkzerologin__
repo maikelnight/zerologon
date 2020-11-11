@@ -1,4 +1,3 @@
-$yesterday = (Get-Date) - (New-TimeSpan -Day 1)
 
 $dcnames = @("DC1","DC2","DC3")
 
